@@ -1,7 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 export default class Article extends React.Component {
+  componentWillReceiveProps(nextProps) {
+    console.log(nextProps);
+  }
+
   render() {
     return (
       <div className="article">
@@ -13,7 +16,7 @@ export default class Article extends React.Component {
         }
         <div className="image-panel">
           {
-            this.props.thumbnailURL && <img src={this.props.thumbnailURL} />
+            this.props.thumbnailURL && <img src={this.props.thumbnailURL} alt='' />
           }
           <div>
             <a href={ this.props.url } target="_blank">Link</a>

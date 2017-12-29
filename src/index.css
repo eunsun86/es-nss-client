@@ -24,6 +24,20 @@ h1 {
     margin: 0 auto;
 }
 
+.selection li {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 3px;
+}
+
+.selection li:hover {
+    background-color: pink;
+}
+
 .article {
     padding: 30px;
     background-color: #fff;
